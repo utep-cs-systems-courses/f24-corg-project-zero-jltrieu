@@ -26,3 +26,9 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+// prints a triangle and then a square to make an arrow shape :)
+void print_arrow(int leftCol, int size)
+{
+  print_triangle(leftCol, size);
+  print_square(leftCol+(leftCol/2) , size); // starting column is further out to center it
+}
